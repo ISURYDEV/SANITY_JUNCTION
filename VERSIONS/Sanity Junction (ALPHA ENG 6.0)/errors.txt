@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 179: end of line expected.
+    scene 1920x1080.png
+                   ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sun Aug 20 11:36:39 2023

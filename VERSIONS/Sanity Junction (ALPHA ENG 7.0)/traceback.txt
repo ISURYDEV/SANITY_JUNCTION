@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 245, in script
+    show pc_happy at Glitch(_fps=1000., glitch_strength=.3, color_range1="c00a", color_range2="f00", glitch_strength=.1)
+SyntaxError: keyword argument repeated: glitch_strength (game/script.rpy, line 245)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 245, in script
+    show pc_happy at Glitch(_fps=1000., glitch_strength=.3, color_range1="c00a", color_range2="f00", glitch_strength=.1)
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1387, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1387, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1151, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1067, in py_compile
+    raise orig_e
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1060, in py_compile
+    rv = compile(tree, filename, py_mode, flags, 1)
+SyntaxError: keyword argument repeated: glitch_strength (game/script.rpy, line 245)
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.1.1.23060707
+Sanity Junction ALPHA ENG 1.0
+Sun Aug 20 14:58:19 2023

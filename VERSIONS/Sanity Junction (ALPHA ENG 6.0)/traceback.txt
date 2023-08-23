@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+Exception: renpy.restart_interaction() was called 100 times without processing any input.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Administrator\Desktop\renpy-8.1.1-sdk\renpy\display\core.py", line 3577, in interact
+    raise Exception("renpy.restart_interaction() was called 100 times without processing any input.")
+Exception: renpy.restart_interaction() was called 100 times without processing any input.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.1.1.23060707
+Sanity Junction ALPHA ENG 1.0
+Sun Aug 20 12:30:53 2023

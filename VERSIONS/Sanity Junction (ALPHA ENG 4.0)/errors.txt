@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 42: end of line expected.
+    jump video_real with dissolve
+                    ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Mon Aug 14 17:34:31 2023
